@@ -16,10 +16,11 @@
         th a {display: block; padding: 6px 12px;}
         img.gratipay {height: 36px;}
         img.bountysource {height: 24px;}
-        td {padding: 12px 0; border: 1px solid #CCC; border-style: solid none; border-collapse: collapse;}
-        td.check { text-align: center; }
-        td.check.yes { color: green; }
-        td.check.no { color: red; }
+        td {padding: 12px 0; border: 1px solid #CCC; border-style: solid none; text-align: center;}
+        td.label {text-align: left;}
+        td.check {font-size: 20px;}
+        td.check.yes {color: green;}
+        td.check.no {color: red;}
         .choose td {border-bottom: none; padding: 0;}
         .choose td a {display: block; padding: 12px;}
         .choose td a:hover {background: #FFC;}
@@ -45,25 +46,25 @@
             <th><img class="bountysource" src="bountysource.png" alt="Bountysource"></td>
         </tr>
         <tr>
-            <td>crowdfunding for open-source</td>
+            <td class="label">crowdfunding for open-source</td>
             <td class="check yes">&#10004;</td>
             <td class="check yes">&#10004;</td>
         </tr>
         <tr>
-            <td><i>is</i> open-source</td>
+            <td class="label"><i>is</i> open-source</td>
             <td class="check yes">&#10004;</td>
             <td class="check no">&#10008;</td>
         </tr>
         <tr>
-            <td>fee</td>
-            <td class="check">you decide</td>
-            <td class="check">10%</td>
+            <td class="label">fee</td>
+            <td>you decide</td>
+            <td>10%</td>
         </tr>
         <tr class="choose">
             <td></td>
-            <td class="check"><a href="https://gratipay.com/new">Choose<br>
+            <td><a href="https://gratipay.com/new">Choose<br>
                 <b>Gratipay</b></a></td>
-            <td class="check"><a href="https://www.bountysource.com/signin">Choose<br>
+            <td><a href="https://www.bountysource.com/signin">Choose<br>
                 <b>Bountysource</b></a></td>
         </tr>
     </table>
