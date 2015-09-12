@@ -11,13 +11,18 @@
         h1 {margin: 40px 0 20px;}
         h2 {margin: 40px 0 20px; text-align: center;}
         table {margin: 20px auto 40px; border-collapse: collapse;}
-        th {text-align: left; padding: 0 20px;}
-        th:first-child {padding: 0;}
-        td {padding: 3px 0; border: 1px solid #CCC; border-style: solid none;}
+        th {text-align: left; vertical-align: middle; padding: 0 20px;}
+        th:first-child {padding: 0 0 12px;}
+        th a {display: block; padding: 6px 12px;}
+        img.gratipay {height: 36px;}
+        img.bountysource {height: 24px;}
+        td {padding: 12px 0; border: 1px solid #CCC; border-style: solid none; border-collapse: collapse;}
         td.check { text-align: center; }
         td.check.yes { color: green; }
         td.check.no { color: red; }
-        .choose td {border-bottom: none;}
+        .choose td {border-bottom: none; padding: 0;}
+        .choose td a {display: block; padding: 12px;}
+        .choose td a:hover {background: #FFC;}
         footer {font-style: italic;}
     </style>
 </head>
@@ -36,8 +41,8 @@
     <table>
         <tr>
             <th>Feature</th>
-            <th>Gratipay</th>
-            <th>Bountysource</th>
+            <th><img class="gratipay" src="gratipay.svg" alt="Gratipay"></td>
+            <th><img class="bountysource" src="bountysource.png" alt="Bountysource"></td>
         </tr>
         <tr>
             <td>crowdfunding for open-source</td>
@@ -56,8 +61,10 @@
         </tr>
         <tr class="choose">
             <td></td>
-            <td class="check"><a href="https://gratipay.com/new">Choose<br><b>Gratipay</b></a></td>
-            <td class="check"><a href="https://www.bountysource.com/signin">Choose<br><b>Bountysource</b></a></td>
+            <td class="check"><a href="https://gratipay.com/new">Choose<br>
+                <b>Gratipay</b></a></td>
+            <td class="check"><a href="https://www.bountysource.com/signin">Choose<br>
+                <b>Bountysource</b></a></td>
         </tr>
     </table>
 
